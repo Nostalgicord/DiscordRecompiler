@@ -1,0 +1,34 @@
+{
+    "appId": "com.squirrel.Discord.Discord",
+    "productName": "Discord",
+    "files": [
+        "**/*",
+        "!bootstrap${/*}",
+        "!modules${/*}",
+        "node_modules${/*}",
+        "!app.ico",
+        "build_info.json"
+    ], 
+    "extraResources": [
+        "build_info.json",
+        "bootstrap${/*}"
+    ],
+    "extraFiles": [
+        "modules${/*}",
+        "app.ico"
+    ],
+    "win": { 
+        "artifactName": "${name}-win32-${arch}.${ext}",
+        "target": [ 
+            { 
+                "target": "squirrel", 
+                "arch": "ia32"
+            }
+        ],
+        "icon": "app.ico",
+        "publisherName": "Discord, Inc."
+    },
+    "squirrelWindows": {
+        "iconUrl": "https://deeznuts.shx.gg/55aALT8Rg.ico"
+    }
+}

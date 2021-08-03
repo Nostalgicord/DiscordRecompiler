@@ -1,0 +1,26 @@
+{
+  "name": "discord",
+  "description": "Discord Bootstraper Bla bla bla",
+  "main": "app_bootstrap/index.js",
+  "private": true,
+  "scripts": {
+    "pack": "electron-builder --dir --config electron-builder.json",
+    "dist": "electron-builder --config electron-builder.json",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@sentry/node": "6.0.0",
+    "mkdirp": "^1.0.4",
+    "request": "2.88.0",
+    "rimraf": "^2.6.3",
+    "yauzl": "^2.10.0"
+  },
+  "devDependencies": {
+    "devtron": "1.4.0",
+    "electron": "13.1.7",
+    "electron-builder": "^22.11.7",
+    "electron-builder-squirrel-windows": "^22.11.8"
+  },
+  "author": "Discord, Inc.",
+  "version": "1.0.9002"
+}
