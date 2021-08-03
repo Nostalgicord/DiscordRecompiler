@@ -22,7 +22,7 @@ Any steps needed to add can be appreciated.
 6. Move everything but node_modules from the app folder to the project directory
 7. Move `bootstrap` folder (and `build_info.json` for latest versions) from the resource folder to the project directory.
 8. Go to `C:/Users/(your user)/Appdata/local/Discord/app-(version)/` and copy `app.ico` to the project directory.
-9. Go to %`appdata%/Discord/modules` (or `C:/Users/(your user)/Appdata/local/Discord/app-(version)/modules/` for some versions)
+9. Go to `%appdata%/Discord/modules` (or `C:/Users/(your user)/Appdata/local/Discord/app-(version)/modules/` for some versions)
 10. If you're in `C:/Users/(your user)/Appdata/local/Discord/app-(version)/modules`, then copy every folder to the project's modules directory, if not, then go to the individual folders, and copy to the modules folder in the the project's directory.
 11. Open cmd in this folder and type `yarn install`, then `yarn add electron electron-builder electron-builder-squirrel-windows --dev`
 12. Go to `package.json.example`, then copy the scripts block to your `package.json`, then in your `package.json`, modify the Electron version to your Discord's Electron version (be sure to not put a ^ in front of the version number), and insert author block and version block. Your `package.json` should look like `package.json.example`.
